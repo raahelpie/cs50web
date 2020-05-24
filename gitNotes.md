@@ -1,7 +1,7 @@
-#Git
+# Git
 
 
-##Lecture notes (from lecture0):
+## Lecture notes (from lecture0):
 
 
 
