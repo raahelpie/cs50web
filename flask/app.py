@@ -1,7 +1,12 @@
-from flask import Flask
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route("/")
-def main():
-	return "Ud kar char kar swedh bawan ko ooo..."
+notes = []
+
+@app.route("/", methods=["GET", "POST"])
+def index():
+	if request.method == "POST":
+		note = request.form.get("note")
+		notes.append(note)
+	return render_template("notes.html", notes=notes)

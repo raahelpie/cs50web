@@ -1,0 +1,16 @@
+ORMs and APIs
+
+We notice that in Python files, we define the main functionality of the program in the main function and at the bottom, we run
+
+if __name__ == "__main__":
+	main()
+
+The file would still do the same thing if we just did this:
+
+main()
+
+without the __name__ == "__main__", right? Yes
+
+But when we try to import this file into any other file, then we won't really want the whole main function to run when importing, maybe just utilize some of the functions in it, but it will implement the main function that's just how Python works, it comes from top to bottom and executes everything it sees.
+
+Check out lully.py and lully2.py for clarification.
